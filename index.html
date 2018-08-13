@@ -11,10 +11,6 @@
       /*
       These are the responsive styles. Throw some breakpoints in here!
       */
-	  body{
-        height:100%;
-        width:100%;
-      }
 	  
       .content{
         display: flex;
@@ -55,7 +51,7 @@
 			a.hamburger{
 			    display: block;
 				float: right;
-				padding: 1.1em;	
+				padding: 0.4em 0.6em;	
 			}
 
 			main{
@@ -88,6 +84,12 @@
 				font-size: 2em;
 				 margin: 1.3em 0.2em;
 			}
+			
+			.header__logo {
+				height: 42px;
+				margin-right: 0.5em;
+				vertical-align: bottom;
+			}
 		
       }
 	  
@@ -95,7 +97,7 @@
         	
 			.header__title {
 				font-size: 1.1em;
-				margin: 3em 0.1em;
+				margin: 1em 0.1em;
 			}
 		
       }
@@ -112,10 +114,16 @@
       }
 	  
 	  @media screen and (min-width: 980px) {
-        .content{
-			width:980px;
+        		
+		main {
+		  width:980px;
 			margin-left:auto;
 			margin-right:auto;
+		}
+		.nav {
+			width:980px;
+			margin-left: auto;
+			margin-right: auto;
 		}
 		
       }

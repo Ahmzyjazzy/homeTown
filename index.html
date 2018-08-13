@@ -304,11 +304,17 @@
 	<script>
 		var menu = document.getElementById('menu');
 		var drawer = document.getElementById('drawer');
+		var main = document.querySelector('main');
 		
 		menu.addEventListener('click', function(e){
 			drawer.classList.toggle('open');
 			e.stopPropagation();
 		});
+		main.addEventListener('click', function(e) {
+		  drawer.classList.remove('open');
+		  e.stopPropagation();
+		});
+	  
 	</script>
   </body>
 </html>

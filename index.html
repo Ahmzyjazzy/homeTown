@@ -28,7 +28,7 @@
 	  }
 
 	  
-	  @media screen and (max-width: 600px) {
+	  @media screen and (max-width: 400px) {
         	
 			body{
 				display: flex;
@@ -75,7 +75,16 @@
 			 .nav.open .nav__item{
 				display:block;
 			  }
-		
+			  
+			img.snippet__thumbnail {
+				display: none;
+			}
+			.trim {
+				overflow: hidden;
+				display: -webkit-box;
+				-webkit-line-clamp: 3;
+				-webkit-box-orient: vertical;
+			}
       }
 	  
 	  @media screen and (max-width: 500px) {
@@ -86,9 +95,8 @@
 			}
 			
 			.header__logo {
-				height: 42px;
+				height: 64px;
 				margin-right: 0.5em;
-				vertical-align: bottom;
 			}
 		
       }
@@ -96,10 +104,14 @@
 	  @media screen and (max-width: 380px) {
         	
 			.header__title {
-				font-size: 1.1em;
+				font-size: 1.6em;
 				margin: 1em 0.1em;
 			}
-		
+			
+			.header__logo {
+				height: 48px;
+				margin-right: 0.5em;
+			}		
       }
 	  
 	  @media screen and (min-width: 760px) {
